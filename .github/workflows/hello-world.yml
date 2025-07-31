@@ -12,6 +12,7 @@ jobs:
           node-version: '18.x'
       - run: npm install
       - run: npm run build 
+      
   test: 
     needs: build
     runs-on: ubuntu-latest
@@ -22,5 +23,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-     npm install: save-dev eslint-config-next
-      - run: npm test
+  npm install: save-dev eslint-config-next 
+               run: npm test
